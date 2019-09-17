@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Tijdlijn </title>
+		<link rel="stylesheet" type="text/css" href="mobiel.css">
+	</head>
+	<body>
+		<div id="uitleg"/>
+			<p>
+				Bij challenge 1B wordt de uiteindelijke tijdlijn geprogrammeerd. Hierbij is er gebruik gemaakt van de methode: mobile first. Dit houdt in dat je begint met het maken van de mobiele versie en vanaf daar ga je werken naar de andere schermbreedtes. Omdat ik niet wist hoe ik de lijnen van de tijdlijn kon coderen en ik zoveel mogelijk alles zelf wilde coderen en aan mijn schetsen houden. Heb ik de lijnen in illustrator gemaakt en heb ik het geëxporteerd naar een svp-bestand. De code hiervan heb ik vervolgens in mijn html-bestand geplaatst en heb ik het zo aangepast zodat het binnen de verschillende schermbreedtes past. Dit ging gelukkig allemaal goed. Waar ik wel heel erg moeite mee had was de card-flip animatie. Ik wilde net zoals dat de hokjes om zouden keren zodat de tekst op de achterkant te vinden zou zijn. Maar dit is me niet helemaal gelukt. De animatie was gelukt, maar om de tekst alleen zichtbaar te maken wanneer het omgedraaid was ging niet. Dus heb ik de tekst onder de plaatjes gezet, zodat ze allebei in een keer zichtbaar zouden zijn. Naast dit is alles hetzelfde gebleven als het prototype.
+			</p>	
+		</div>
+		<h1 id="mobiel"> Responsive design </br> through the ages </h1>
+		<h1 id="ipad"> Responsive design through </br> the ages </h1>
+		<!-- begin van de code voor de midden lijn van de tijdlijn (mobiele versie) (svg) -->
+		<svg id="lijn" data-name="lijn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.08 3824.52">
+		    <defs>
+		        <style>
+		            .cls-1 {
+		                fill: none;
+		                stroke: #1d1d1b;
+		                stroke-miterlimit: 10;
+		            }
+		            .cls-2 {
+		                fill: #526887;
+		            }
+		        </style>
+		    </defs>
+		    <title>lijn</title>
+		    <line class="cls-1" x1="11.54" y1="19.49" x2="11.54" y2="3812.98" />
+		    <circle class="cls-2" cx="11.54" cy="3812.98" r="11.54" />
+		    <circle class="cls-2" cx="11.54" cy="11.54" r="11.54" />
+		</svg>
+		<!-- einde van de code voor de middenlijn van de tijdlijn (mobiele versie) -->
+
+		<!-- begin van de code voor de midden lijn van de tijdlijn (ipad versie) (svg) -->
+		<svg id="lijn2" data-name="lijn 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.73 1000.57">
+		    <defs>
+		        <style>
+		            .cls-1,
+		            .cls-3 {
+		                fill: none;
+		                stroke: #020303;
+		                stroke-miterlimit: 10;
+		            }
+		            .cls-2 {
+		                fill: #526888;
+		            }
+		            .cls-3 {
+		                stroke-width: 3px;
+		            }
+		        </style>
+		    </defs>
+		    <title>lijn</title>
+		    <line class="cls-1" x1="75.16" x2="75.16" y2="1680.28" />
+		    <circle class="cls-2" cx="75.16" cy="7.29" r="7.29" />
+		    <circle class="cls-2" cx="75.16" cy="1680.28" r="7.29" />
+		    <path class="cls-3" d="M190.17,1130.37" transform="translate(-220.08 -168.53)" />
+		    <path class="cls-3" d="M296.78,1129.91" transform="translate(-220.08 -168.53)" />
+		    <line class="cls-1" x1="75.8" y1="181.34" x2="150.72" y2="180.85" />
+		    <circle class="cls-2" cx="75.79" cy="180.45" r="7.29" />
+		    <line class="cls-1" x1="76.31" y1="604.97" x2="151.22" y2="604.48" />
+		    <circle class="cls-2" cx="76.3" cy="604.08" r="7.29" />
+		    <line class="cls-1" x1="77.82" y1="1029.1" x2="152.73" y2="1028.62" />
+		    <circle class="cls-2" cx="77.81" cy="1028.22" r="7.29" />
+		    <line class="cls-1" x1="77.82" y1="1465.83" x2="152.73" y2="1465.34" />
+		    <circle class="cls-2" cx="75.81" cy="1464.94" r="7.29" />
+		    <line class="cls-1" x1="76.43" y1="1269.62" x2="1.51" y2="1270.11" />
+		    <circle class="cls-2" cx="76.44" cy="1270.51" r="7.29" />
+		    <line class="cls-1" x1="74.92" y1="825.84" y2="826.33" />
+		    <circle class="cls-2" cx="74.92" cy="826.73" r="7.29" />
+		    <line class="cls-1" x1="76.43" y1="386.09" x2="1.51" y2="386.58" />
+		    <circle class="cls-2" cx="76.44" cy="386.98" r="7.29" />
+		</svg>
+		<!-- einde van de code voor de middenlijn van de tijdlijn (ipad versie) -->
+
+		<div class="content">
+			<!-- eerste flexbox -->
+			<div class= "container"> 
+				<h2 id="eerste"> 1969 </h2> 
+				<div id="plaatje1" class="plaatje"> <!--front-->
+					<h3> ARPANET </h3>
+					<img src="arpanetmap.jpg" alt="afbeelding" id="arpanet" title="by Richard T. Griffiths:http://www.let.leidenuniv.nl/history/ivh/chap2.htm "/>
+				</div>
+				<div id="tekst1" class="tekst"> <!--back-->
+					<p> 
+						In 1969 kwam door J.C.R. Licklider ARPANET in gebruik. Het Arpanet is een computernetwerk dat bestaat uit vier computers die met elkaar verbonden zijn. Wanneer twee het niet deden kwam de boodschap nog steeds aan bij de andere twee. Arpanet maakt gebruik (zoals het huidige internet) van packet-switching.
+					</p>
+				</div>
+			</div>
+			<!-- einde eerste flexbox -->
+			<!-- tweede flexbox -->
+			<div class="container">
+				<h2 id="tweede"> 1989 </h2>
+				<div id="plaatje2" class="plaatje" >
+					<h3> World Wide Web </h3>
+					<img src="www.png" alt="afbeelding" id="www"/>
+				</div>
+			</div>
+			<div id="tekst2" class="tekst">
+					<p> 
+						In 1989 bedacht Tim Berners-Lee de World Wide Web. Dit wordt ook wel het web genoemd. World Wide Web houdt in: </br>
+						1. Een aantal technische afspraken, wereldwijd, voor het internet en verbinden documenten en computertoepassingen samen. </br>
+						2. De verzameling documenten en toepassingen die wereldwijd volgens dit systeem over het internet worden aangeboden.
+					</p>
+				</div>
+
+			<!-- einde tweede flexbox -->
+			<!-- derde flexbox -->
+			<div class="container">
+				<h2 id="derde"> 1991 </h2>
+				<div id="plaatje3" class="plaatje">
+					<h3> HTML </h3>
+					<img src="code.jpg" alt="afbeelding" id="code" title="http://www.origindesign.fr/image-logo-html/"/>
+				</div>
+			</div>
+			<div id="tekst3" class="tekst">
+					<p> 
+						HTML (HyperText Markup Language) is in 1991 bedacht en ontwikkeld door Tim Berners-Lee om wetenschappelijk documenten gemakkelijker toegankelijk te maken. Het is begonnen als een eenvoudige opmaaktaal voor tekst, met hyperlinks die URL’s bevatten. 
+					</p>
+				</div>
+			<!-- einde derde flexbox -->
+			<!-- vierde flexbox -->
+			<div class="container">
+				<h2 id="vierde"> 1993 </h2>
+				<div id="plaatje4" class="plaatje">
+					<h3> Grafische browser </h3>
+					<img src="mosaic.png" alt="afbeelding" id="mosaic" title="Bernard De Luna:https://dribbble.com/shots/1234292-Mosaic-flat-logo-1st-visual-browser"/> 
+				</div>
+			</div>
+			<div id="tekst4" class="tekst">
+					<p> 
+						De eerste grafische browser heette Mosaic. Het is geschreven door het Amerikaanse National Center for Supercomputing Applications (NCSA) Het werd in 1992 ontwikkeld en in 1993 uitgebracht. Mosaic was de eerste browser die afbeeldingen kon integreren in de tekst, in plaats van het te tonen in een apart venster. 
+					</p>
+				</div>
+			<!-- einde vierde flexbox -->
+			<!-- vijfde flexbox -->
+			<div class="container2">
+				<h2 id="vijfde"> 1996 </h2>
+				<div id="gebeurtenissen2">
+					<div id="box"> <!-- 1 box om allebei de gebeurtenissen samen, css en javascript-->
+						<div id="plaatje5">
+							<h3 id="css2"> CSS </h3>
+							<img src="css.png" alt="afbeelding" id="css"/>
+						</div>
+						<div id="tekst5" class="tekst">
+						<p> 
+							CSS (Cascading Style Sheets), stijlbladen, zijn een mogelijkheid om de vormgeving van webpagina’s te koppelen van hun feitelijke inhoud en centraal vast te leggen. Hakon Wium lie kwam in 1994 met het idee en in 1996 hebben Hakon en Bert Bos CCS1 ontwikkeld.   
+							<hr/ id="split">
+						</p>
+					</div>
+						<div id="plaatje6">
+							<h3 id="javascript2"> Javascript </h3>
+							<img src="javascript.png" alt="afbeelding" id="javascript"/>
+						</div>
+					</div>
+				</div>
+						<div id="tekst6" class="tekst">
+							<p> 
+								Javascript is een universele programmeertaal dat in 1996 bedacht is door Brendan Eich. Het heeft eerst twee andere namen gehad voordat het javascript genoemd werd Mocha —> Livescript —> Javascript. Het wordt gebruikt om webpagina's interactief te maken en webapplicaties te ontwikkelen.
+							</p>
+						</div>
+			</div>
+			<!-- einde vijfde flexbox -->
+			<!-- zesde flexbox -->
+			<div class="container">
+				<h2 id="zesde"> 2007 </h2>
+				<div id="plaatje7" class="plaatje">
+					<h3> iPhone </h3>
+					<img src="iphone.jpg" alt="afbeelding" id="iphone" title="Eveline Meijer:http://numrush.nl/2017/06/29/de-iphone-een-tiener/"/> 
+				</div>
+			</div>
+			<div id="tekst7" class="tekst">
+					<p> 
+						In 2007 kwam Steve Jobs met de eerste iPhone, de iPhone 2G. Het is een smartphone dat draait op het mobiele besturingssysteem iPhone OS. Er werd naar dit toestel verwezen als een model van de eerste generatie. Deze eerste generatie telefoon werd op 9 januari 2007 aangekondigd.
+					</p>
+				</div>
+			<!-- einde zesde flexbox -->
+			<!-- zevende flexbox -->
+			<div class="container">
+				<h2 id="achste"> 2010 </h2>
+				<div id="plaatje8" class="plaatje">
+					<h3> Responsive webdesign </h3>
+					<img src="responsive.jpeg" alt="afbeelding" id="responsive" title="Eran Kinsbruner:http://blog.perfectomobile.com/responsive-web-design/a-responsive-web-design-testing-strategy-leveraging-selenium-automation/"/>
+				</div>
+			</div>
+			<div id="tekst8" class="tekst">
+					<p> 
+						Responsive webdesign is in 2010 bedacht door Ethan Marcotte op de weblog A list Apart. Het ontwerp van een responsive website schaalt mee met de afmeting van een scherm, zonder in te leveren op leesbaarheid van tekst of bruikbaarheid van de gebruikersinterface. 
+					</p>
+				</div>
+			<!-- einde zevende flexbox -->
+		</div>
+	</body>
+</html>
+

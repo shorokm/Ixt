@@ -1,0 +1,996 @@
+body { /* mobiele versie*/
+		font-family: Arial;
+}
+
+#uitleg {
+	border: 1px solid #D3D3D3;
+	width: 380px;
+	height: 380px;
+	margin-top: 40px;
+	margin-left: -2px;
+	background-color: #B26660;
+}
+
+#uitleg > p {
+	text-align: left;
+	font-size: 14px;
+	padding: 10px;
+	color: white;
+}
+
+#tekst8 {
+	display: none;
+}
+
+#tekst1 {
+	margin-top: -225px; 
+	margin-left: 30px;
+	width: 310px;
+	height: 357px;
+	font-size: 13px;
+	display: block;
+	border: 1px solid black;
+	background-color: white;
+	padding-left: 10px;
+}
+
+#tekst1 > p {
+	margin-top: 235px;
+}
+
+#arpanet {
+	z-index: 2;
+	width: 300px;
+}
+
+#tekst2 {
+	margin-top: -200px; 
+	margin-left: 34px;
+	width: 310px;
+	height: 357px;
+	font-size: 13px;
+	display: block;
+	border: 1px solid black;
+	background-color: white;
+	padding-left: 10px;
+	padding-bottom: 6px;
+}
+
+#tekst2 > p {
+	margin-top: 215px;
+}
+
+#plaatje2 {
+	width: 200px;
+}
+
+#www {
+	z-index: 2;
+	width: 300px;
+	height: 150px;
+	padding-top: 20px;
+	margin-left: -5px;
+}
+
+#tekst3 {
+	margin-top: -240px; 
+	margin-left: 34px;
+	width: 310px;
+	height: 357px;
+	font-size: 13px;
+	display: block;
+	border: 1px solid black;
+	background-color: white;
+	padding-left: 10px;
+}
+
+#tekst3 > p {
+	margin-top: 240px;
+}
+
+#plaatje3 {
+	width: 200px;
+}
+
+#code {
+	z-index: 2;
+	width: 300px;
+	height: 150px;
+	padding-top: 20px;
+}
+
+#tekst4 {
+	margin-top: -210px; 
+	margin-left: 34px;
+	width: 310px;
+	height: 357px;
+	font-size: 13px;
+	display: block;
+	border: 1px solid black;
+	background-color: white;
+	padding-left: 10px;
+}
+
+#tekst4 > p {
+	margin-top: 225px;
+}
+
+#plaatje4 {
+	width: 200px;
+}
+
+#mosaic {
+	z-index: 2;
+	width: 300px;
+	height: 150px;
+	padding-top: -20px;
+}
+
+#tekst5 {
+	margin-top: -120px; 
+	margin-left: 34px;
+	font-size: 12px;
+	display: block;
+}
+
+#tekst5 > p {
+	margin-top: 300px;
+	margin-left: -161px;
+	width: 145px;
+}
+
+#plaatje5 {
+	margin-left: -15px;
+}
+
+#tekst6 {
+	margin-top: -650px; 
+	margin-left: 31px;
+	width: 320px;
+	height: 357px;
+	font-size: 12px;
+	display: block;
+	border: 1px solid black;
+	display: block;
+}
+
+#tekst6 > p {
+	margin-top: 182px;
+	margin-left: 164px;
+	width: 155px;
+}
+
+#plaatje6 {
+	margin-left: -5px;
+}
+
+#tekst7 {
+	margin-top: -225px; 
+	margin-left: 35px;
+	width: 310px;
+	height: 357px;
+	font-size: 12px;
+	display: block;
+	border: 1px solid black;
+	padding-left: 10px;
+	background-color: white;
+}
+
+#tekst7 > p {
+	margin-top: 245px;
+	width: 300px;
+}
+
+#tekst8 {
+	margin-top: -225px; 
+	margin-left: 35px;
+	width: 310px;
+	height: 357px;
+	font-size: 12px;
+	display: block;
+	border: 1px solid black;
+	padding-left: 10px;
+	background-color: white;
+}
+
+#tekst8 > p {
+	margin-top: 245px;
+	margin-left: 3px;
+	width: 300px;
+}
+
+.content {
+	position: absolute;
+	z-index: 2;
+	margin-top: 30px;
+	display: block;
+}
+
+#lijn {  /*code voor de middenlijn van de tijdlijn (svg bestand)*/
+	width: 20px;
+	height: auto;
+	position: absolute;
+	z-index: 1;
+	margin-top: 30px;
+	margin-left: 180px;
+	margin-bottom: 70px; 
+} 
+
+#lijn2 {
+	display: none;
+}
+
+#mobiel { /* h1: titel van de mobiele versie*/
+ 	text-align: center;
+	color: #516787;
+	font-size: 32px;
+}
+
+#ipad { /* h1: titel van de ipad versie*/
+	display: none; 
+}
+
+.container , .container2, #plaatje1 , #plaatje2, #plaatje3, #plaatje4, #plaatje7 , #plaatje8 { /* (container) box voor de jaartaal, titel en plaatje en (plaatje1,2,3) box met alleen titel en plaatje*/
+	display: flex;
+	width: 360px;
+	flex-direction: column;
+	align-items: center;
+}
+
+#plaatje1 , #plaatje2, #plaatje3, #plaatje4, #plaatje7, #plaatje8 { 
+ 	margin-left: 30px;
+ }
+
+
+ #plaatje1 >img , #plaatje2 > img, #plaatje3 > img {
+ 	margin-top: -9px;
+}
+
+#gebeurtenissen2 > #box {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+#css2{
+	margin-left: 93px;
+	margin-bottom: 3px;
+}
+
+#javascript2 {
+	margin-left: 35px;
+	margin-bottom: 3px;
+}
+
+h2 {
+	margin-left: 50px;
+	font-size: 25px; 
+	margin-top: 50px;
+	margin-bottom: 20px;
+	margin-left: 85px;
+}
+
+h3 {
+	font-size: 16px;
+	text-transform: bold;
+	margin-bottom: 2px;
+	z-index: 3;
+}
+
+img {
+	width: 295px;
+	height: 190px
+}
+
+#css {
+	width: 124px;
+	height: 124px;
+	margin-left: 50px;
+}
+
+#javascript {
+	width: 150px;
+	height: 124px;
+}
+
+#www {
+	width: 170px;
+	height: 150px;
+	padding-top: 20px;
+	margin-left: -5px;
+}
+
+#plaatje2 > h3 {
+	margin-top: 15px;
+}
+
+#code {
+	width: 310px;
+	height: 224px;
+}
+
+#plaatje3 > h3 {
+	margin-left: 5px;
+	margin-bottom: -25px;
+}
+
+#mosaic {
+	width: 220px;
+	height: 170px;
+	margin-top: 40px;
+	margin-left: -10px;
+}
+
+#plaatje4 > h3 {
+	margin-left: -5px;
+	position: absolute;
+	margin-top: 20px;
+	z-index: 3;
+}
+
+#iphone {
+	margin-top: 5px;
+}
+
+#plaatje7 > h3 {
+	margin-top: 5px;
+}
+
+#responsive {
+	margin-left: 7px;
+}
+
+/*einde mobiele versie*/
+
+@media only screen and (min-width: 768px) { /* ipad versie*/
+	#uitleg {
+		border: 1px solid #D3D3D3;
+		width: 790px;
+		height: 220px;
+		margin-top: 40px;
+		margin-left: 7px;
+		background-color: #B26660;
+	}
+
+	#uitleg > p {
+		text-align: left;
+		font-size: 15px;
+		padding: 10px;
+		padding-left: 15px;
+		color: white;
+	}
+
+	#mobiel { /* h1 van mobiele versie*/
+		display: none;
+	}
+
+	#ipad { /*h1 van ipad versie*/
+		display: block;
+		text-align: center;
+		color: #516787;
+		font-size: 34px;
+	}
+
+	.last {
+		margin-top: 100px;
+	}
+
+	#lijn2 {  /*code voor de middenlijn van de tijdlijn (svg bestand)*/
+		width: 190px;
+		height: 3000px;
+		position: absolute;
+		z-index: 1;
+		margin-top: -860px;
+		margin-bottom: 70px;
+		margin-left: 280px;
+		display: block;
+	}
+
+	#lijn {
+		display: none;
+	}
+
+	/* eerste gebeurtenis */
+
+	#plaatje1 {
+		margin-left: 820px;
+		margin-top: -190px;
+		width: 288px;
+		height: 357px;
+	}
+
+	#arpanet {
+		width: 270px;
+		padding-top: 8px;
+	}
+
+	#eerste {
+		margin-left: 466px;
+		margin-top: 180px;
+	}
+
+	.tekst > h3 {
+		display: none;
+	}
+
+	#tekst1 {
+		width: 270px;
+		font-size: 12px;
+		display: block;
+		margin-left: 820px;
+		margin-top: -350px;
+		text-align: left;
+	}
+
+	/*einde eerste gebeurtenis*/
+
+	/* tweede gebeurtenis */
+
+	#plaatje2 {
+		margin-left: -45px;
+		margin-top: -180px;
+		width: 288px;
+		height: 357px;
+	}
+
+	#www {
+		width: 160px;
+	}
+
+	#tweede {
+		margin-left: 310px;
+		margin-top: 25px;
+	} 
+
+	#tekst2 {
+		width: 270px;
+		font-size: 12px;
+		display: block;
+		margin-top: -360px;
+		margin-left: 20px;
+	}
+
+	/* einde tweede gebeurtenis*/
+
+	/* derde gebeurtenis */
+
+	#plaatje3 {
+		margin-left: 815px;
+		margin-top: -190px;
+		width: 288px;
+		height: 357px;
+	}
+
+	#code {
+		width: 270px;
+	}
+
+	#derde {
+		margin-left: 466px;
+		margin-top: 45px;
+	}
+
+	#tekst3 {
+		width: 270px;
+		font-size: 12px;
+		margin-left: 450px;
+		margin-top: -360px;
+	}
+
+	#tekst3 > p {
+		margin-top: 235px;
+		position: absolute;
+		z-index: 2;
+	}
+
+	/* einde derde gebeurtenis */
+
+	/* vierde gebeurtenis*/
+
+	#plaatje4 {
+		margin-left: -45px;
+		margin-top: -185px;
+		width: 288px;
+		height: 357px;
+	}
+
+	#mosaic {
+		width: 288px;
+	}
+
+	#vierde {
+		margin-left: 310px;
+		margin-top: 60px;
+	} 
+
+	#tekst4 {
+		display: block;
+		width: 270px;
+		font-size: 12px;
+		margin-top: -360px;
+		margin-left: 20px;
+	}
+
+	#tekst4 > p {
+		margin-left: -5px;
+	}
+
+	/* einde vierde gebeurtenis*/
+
+	/* vijfde en zesde gebeurtenis */
+
+	#box {
+		margin-left: 827px;
+		margin-top: -195px;
+		width: 288px;
+		height: 357px;
+	}
+
+	#plaatje5 {
+		margin-top: -230px;
+		margin-right: -165px;
+		display: block;
+	}
+
+	#plaatje5 > h3 {
+		margin-top: 257px;
+		margin-left: 28px;
+	}
+
+	#css {
+		width: 93px;
+		height: 93px;
+		margin-top: 10px;
+	}
+
+	#css2 {
+		padding-left: 50px;
+	}
+
+	#tekst5 {
+		width: 270px;
+		font-size: 11px;
+		margin-left: -205px;
+		display: block;
+	}
+
+	#tekst5 > p {
+		margin-left: 380px;
+		margin-top: 168px;
+	}
+
+	#plaatje6 {
+		margin-top: 215px;
+		margin-right: -5px;
+		display: block;
+	}
+
+	#javascript {
+		width: 112px;
+		height: 90px;
+		margin-left: 160px;
+		margin-top: 15px;
+		margin-right: 20px;
+	}
+
+	#javascript2 {
+		padding-left: 138px;
+		margin-top: -18px;
+	}
+
+	#vijfde {
+		margin-left: 466px;
+		margin-top: 30px;
+	}
+
+	#tekst6 {
+		display:block;
+		width: 270px;
+		font-size: 11px;
+		margin-left: 820px;
+		margin-top: -350px;
+		display: block;
+	}
+
+	#tekst6 > p {
+		margin-left: 13px;
+		margin-top: 210px;
+	}
+
+	#split {
+		margin-left: 270px;
+		margin-top: 14px;
+		width: 268px;
+	}
+
+	/* einde vijfde en zesde gebeurtenis*/
+
+	/*zevende gebeurtenis*/
+
+	#plaatje7 {
+		margin-left: -40px;
+		margin-top: -185px;
+		width: 280px;
+		height: 357px;
+	}
+
+	#iphone {
+		width: 267px;
+		margin-top: 5px;
+	}
+
+	#zesde {
+		margin-left: 315px;
+		margin-top: 80px;
+	}
+
+	#tekst7 {
+		display: block;
+		width: 270px;
+		font-size: 12px;
+		margin-top: -360px;
+		margin-left: 20px;
+	}
+
+	#tekst7 > p {
+		width: 265px;
+	}
+
+	/* einde zevende gebeurtenis*/
+
+	/* achste gebeurtenis*/
+
+	#plaatje8 {
+		margin-left: 830px;
+		margin-top: -175px;
+		width: 288px;
+		height: 357px;
+	}
+
+	#responsive {
+		width: 270px;
+		margin-top: -5px;
+		margin-right: 5px;
+	}
+
+	#achste {
+		margin-left: 466px;
+		margin-top: 20px;
+	}
+
+	#tekst8 {
+		width: 270px;
+		font-size: 12px;
+		margin-left: 450px;
+		margin-top: -360px;
+	}
+
+	#tekst8 > p {
+		width: 260px;
+	}
+
+	/* einde achste gebeurtenis*/
+
+}
+
+
+@media only screen and (min-width: 1366px) { /* desktop versie*/
+		#uitleg {
+			border: 1px solid #D3D3D3;
+			width: 1300px;
+			height: 180px;
+			margin-top: 40px;
+			margin-left: 60px;
+			background-color: #B26660;
+		}
+
+		#uitleg > p {
+			text-align: left;
+			font-size: 16px;
+			padding: 10px;
+			padding-left: 15px;
+			color: white;
+		}
+
+		#lijn2 {
+			margin-left: 600px;
+		}
+
+		.content {
+			margin-left: 320px;
+		}
+
+		/* begin code eerste gebeurtenis*/
+
+		#tekst1 {
+			width: 430px;
+			height: 300px;
+			margin-left: 980px;
+			margin-top: -345px;
+		}
+
+		#plaatje1 > h3 {
+			margin-top: 55px;
+			margin-left: -20px;
+		}
+
+		#tekst1 > p {
+			margin-left: 250px;
+			margin-top: 65px;
+		}
+
+		#arpanet {
+			width: 240px;
+			height: 170px;
+			margin-left: -20px;
+		}
+
+		/* einde code eerste gebeurtenis*/
+
+		/* Begin code tweede gebeurtenis*/
+
+		#tekst2 {
+			width: 430px;
+			height: 300px;
+			margin-left: -140px;
+			margin-top: -350px;
+		}
+
+		#tekst2 > p {
+			margin-left: 230px;
+			margin-top: 65px;
+			padding-right: 20px;
+		}
+
+		#plaatje2 {
+			margin-left: -400px;
+		}
+
+		#plaatje2 > h3 {
+			margin-top: 50px;
+		}
+
+		#www {
+			width: 160px;
+			height: 160px;
+			padding-top: 25px;
+		}
+
+		#tweede {
+			margin-top: 80px;
+		}
+
+		/* Einde code tweede gebeurtenis*/
+ 
+		/* Begin derde gebeurtenis */
+
+		#tekst3 {
+			width: 430px;
+			height: 300px;
+			margin-left: 450px;
+			margin-top: -330px;
+		}
+
+		#tekst3 > p {
+			margin-left: 240px;
+			margin-top: 80px;
+			padding-right: 10px;
+		}
+
+		#plaatje3 > h3 {
+			margin-top: 80px;
+			margin-bottom: -40px;
+			margin-left: -18px;
+		}
+
+		#code {
+			width: 250px;
+			margin-left: -22px;
+		}
+
+		#derde {
+			margin-top: 85px;
+		}
+
+		/* Einde derde gebeurtenis*/
+
+		/*Begin vierde gebeurtenis*/
+
+		#tekst4 {
+			width: 430px;
+			height: 300px;
+			margin-left: -140px;
+			margin-top: -330px;
+		}
+
+		#tekst4 > p {
+			margin-left: 230px;
+			margin-top: 75px;
+			padding-right: 20px;
+		}
+
+		#plaatje4 {
+			margin-left: -390px;
+		}
+
+		#plaatje4 > h3 {
+			margin-top: 75px;
+		}
+
+		#mosaic {
+			width: 240px;
+			padding-top: 55px;
+		}
+
+		#vierde {
+			margin-top: 88px;
+		}
+
+		/* Einde veirde gebeurtenis */
+
+		/* Begin vijfde en zesde gebeurtenis */
+
+		#tekst6 {
+			width: 430px;
+			height: 300px;
+			margin-left: 970px;
+			margin-top: -330px;
+		}
+
+		#tekst6 > p {
+			width: 250px;
+			margin-left: 160px;
+			margin-top: 190px;
+		}
+
+		#tekst5 > p {
+			width: 250px;
+			margin-left: 565px;
+			margin-top: 190px;
+		}
+
+		#plaatje5 {
+			margin-top: -220px;
+			margin-right: -330px;
+		}
+
+		#plaatje5 > h3 {
+			margin-left: 36px;
+		}
+
+		#css {
+			width: 110px;
+			height: 110px;
+			margin-top: -1px;
+		}
+
+		#javascript {
+			margin-left: 146px;
+			width: 135px;
+			height: 105px;
+			margin-top: 2px;
+		}
+
+		#plaatje6 {
+			margin-top : 207px;
+		}
+
+		#plaatje6 > h3 {
+			margin-right: 180px;
+		}
+
+		#vijfde {
+			margin-top: 60px;
+		}
+
+		#split {
+			width: 422px;
+			margin-top: 39px;
+			margin-left: 412px;
+		}
+
+		/* Einde vijfde en zesde gebeurtenis*/
+
+		/* Begin zevende gebeurtenis*/
+
+		#tekst7 {
+			width: 430px;
+			height: 300px;
+			margin-left: -140px;
+			margin-top: -330px;
+		}
+
+		#tekst7 > p {
+			margin-left: 250px;
+			margin-top: 75px;
+			width: 170px;
+		}
+
+		#plaatje7 {
+			margin-left: -390px;
+		}
+
+		#plaatje7 > h3 {
+			margin-top: 55px;
+		}
+
+		#iphone {
+			width: 230px;
+			height: 180px;
+			padding-top: 5px;
+		}
+
+		#zesde {
+			margin-top: 115px;
+		}
+		
+		/* Einde zevende gebeurtenis */
+
+		/* Begin achtste gebeurtenis */
+
+		#tekst8 {
+			width: 430px;
+			height: 300px;
+			margin-left: 450px;
+			margin-top: -340px;
+		}
+
+		#tekst8 > p {
+			margin-left: 255px;
+			margin-top: 80px;
+			width: 170px;
+		}
+
+		#plaatje8 > h3 {
+			margin-top: 45px;
+			margin-bottom: 10px;
+			margin-left: -55px;
+		}
+
+		#responsive {
+			width: 240px;
+			margin-left: -22px;
+		}
+
+		#achste {
+			margin-top: 50px;
+		}
+
+		/* Einde achtste gebeurtenis */
+
+}
+
+
+@media only screen and (min-width: 1920px) { /* imac versie*/
+		#uitleg {
+			border: 1px solid #D3D3D3;
+			width: 1700px;
+			height: 180px;
+			margin-top: 40px;
+			margin-left: 90px;
+			background-color: #B26660;
+		}
+
+		#uitleg > p {
+			text-align: left;
+			font-size: 17px;
+			padding: 10px;
+			padding-left: 15px;
+			color: white;
+		}
+
+		#lijn2 {
+			margin-left: 860px;
+		}
+
+		.content {
+			margin-left: 580px;
+		}
+
+
+
+
+
+
+
+}
